@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            position:absolute;
+            bottom:10px;
+            left:40%;
+        }
+h1{
+    position:absolute;
+    top:15px;
+   left:  40%;
+}
+h2{
+    color:lightsalmon;
+}
+p{
+    color: lightsalmon;
+    background-color: lightgoldenrodyellow;
+}
+
+
+body{
+    text-align:center;
+    font-family:Arial;
+    background-image: url("clouds-sky.jpg");
+    background-size: cover;
+}
+
+button{
+    background:orange;
+    border: none;
+    padding:10px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#bee{
+    position:absolute;
+    font-size:30px;
+    animation: fly 5s infinite alternate;
+}
+@keyframes fly{
+    from{
+        left:0;
+        top:50px;
+    }
+    to{
+        left:80%;
+        top:200px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <h1>🐝Bee Shop🐝<br>
+        By Ромашка❤️
+    </h1>
+    <div class="a">
+     <p>🍯Акацієвий мед🍯</p>
+    <button onclick="add()">Додати</button>
+    <p>🍯Липовий мед🍯</p>
+    <button onclick="add()">Додати</button>
+    <p>🍯Соняшниковий мед🍯</p>
+    <button onclick="add()">Додати</button>
+    <h2>Кошик: <span id = "cart">0</span></h2>
+    </div>
+    </body>
+    <div id ="bee">🐝</div>
+    <script src = "script.js"></script>
+</body>
+</html>
